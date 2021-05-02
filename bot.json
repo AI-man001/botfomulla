@@ -1,0 +1,96 @@
+{
+  "_id": "all_menu",
+  "main_menu": {
+    "title": "Main Menu",
+    "1": {
+      "booking_info": {
+        "title": "About Bot",
+        "message": "This is the bot that works for you"
+      }
+    },
+    "2": "register_now",
+    "3": "booking_menu"
+  },
+  "bot_info": {
+    "title": "This is the bot that works for you",
+    "message": "Rules information"
+  },
+  "booking_menu": {
+    "title": "Booking",
+    "1": {
+      "booking_info": {
+        "title": "Information",
+        "message": "Booking Information"
+      }
+    },
+    "2": "book_now",
+    "3": "inquiries_menu"
+  },
+  "inquiries_menu": {
+    "title": "Inquiries",
+    "1": {
+      "requirements_info": {
+        "title": "What should I bring?",
+        "message": "Inquiries Information"
+      }
+    },
+    "2": {
+      "time_info": {
+        "title": "What time should I come?",
+        "message": "Time information"
+      }
+    },
+    "3": {
+      "terms_info": {
+        "title": "What are the terms and conditions?",
+        "message": "Rules information"
+      }
+    }
+  },
+  "book_now": {
+    "collection_name": "booking",
+    "1": {
+      "name": "fullname",
+      "message": "What's your full name?"
+    },
+    "2": {
+      "name": "dob",
+      "message": "What's your date of birth?"
+    },
+    "3": {
+      "name": "arrival_date",
+      "message": "When do you wish to come?"
+    },
+    "4": {
+      "name": "contact_number",
+      "message": "On which number would you want us to contact you?"
+    },
+    "5": {
+      "name": "final",
+      "message": "Thank you for registering with us!!"
+    }
+  },
+  "register_now": {
+    "collection_name": "registration",
+    "1": {
+      "name": "fullname",
+      "message": "What's your full name?"
+    },
+    "2": {
+      "name": "dob",
+      "message": "What's your date of birth?"
+    },
+    "3": {
+      "name": "arrival_date",
+      "message": "When do you wish to come?"
+    },
+    "4": {
+      "name": "contact_number",
+      "message": "On which number would you want us to contact you?"
+    },
+    "5": {
+      "name": "final",
+      "message": "Thank you for registering with us!!"
+    }
+  }
+}

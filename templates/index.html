@@ -1,0 +1,80 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main class="content">
+  <div class="container d-flex justify-content-center">
+    <div class="page-header">
+      <h2 class="text-dark">Bot Controller</h2>
+    </div>
+  </div>
+  <div class="preloader bg-soft flex-column justify-content-center align-items-center">
+    <img class="loader-element animate__animated animate__jackInTheBox" src="/static/assets/img/brand/light.svg"
+      height="60" alt="Volt logo">
+  </div>
+
+  <div class="row">
+    <div class="col-12 mb-4">
+      <div class="card border-light shadow-sm components-section">
+        <div class="card-body">
+          <div class="row mb-4">
+            <div class="col-lg-4 col-sm-6">
+              <!-- Form -->
+              <div class="mb-4">
+                <label class="my-1 mr-2" for="f_type">Feature Type</label>
+                <select class="form-select" id="f_type" aria-label="Default select example">
+                  <option selected>Choose feature type</option>
+                  <option value="menu">Menu</option>
+                  <option value="menuitem">Menu Item</option>
+                  <option value="questionaire">Questionaire</option>
+                </select>
+              </div>
+              <!-- End of Form -->
+              <!-- Form -->
+              <div class="mb-4">
+                <label for="email">Feature Name</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">name must not contain spaces</small>
+              </div>
+              <!-- End of Form -->
+            </div>
+            <!-- Form -->
+            <div class="mb-4">
+              <label for="textarea">Example textarea</label>
+              <textarea class="form-control" placeholder="Enter your message..." id="textarea" rows="4"></textarea>
+            </div>
+            <!-- End of Form -->
+          </div>
+          <div class="row mb-5 mb-lg-5">
+            <div class="col-lg-3 col-md-6">
+              <!-- Checkboxes -->
+              <div class="mb-3">
+                <span class="h6 font-weight-bold">Checkboxes Round</span>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                <label class="form-check-label" for="defaultCheck10">
+                  Default checkbox
+                </label>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="button">Right Icon<span class="fas fa-angle-right ml-2"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include 'includes/footer.html' %}
+
+</main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
